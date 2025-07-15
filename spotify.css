@@ -1,0 +1,421 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
+button {
+  cursor: pointer;
+  background-color: unset;
+  color: white;
+  border: unset;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  width: 100%;
+  background-color: black;
+  color: rgb(179, 179, 179);
+  padding: 1%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+nav .logo {
+  height: 2.5em;
+  width: 2.5em;
+}
+nav .home {
+  height: 3.4em;
+  width: 3.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(31, 31, 31);
+  border-radius: 100%;
+}
+nav .home img {
+  height: 2em;
+  width: 4em;
+  padding: 0em 1em;
+}
+nav .icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5%;
+}
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  width: 40vw;
+  background-color: rgb(31, 31, 31);
+  height: 3.5em;
+  border: 2px solid black;
+  border-radius: 2em;
+  padding: 0.5em 1em;
+}
+.searchbar input {
+  height: 3.7em;
+  width: 100%;
+  background-color: unset;
+  border: unset;
+  font-size: 1rem;
+}
+.searchbar button {
+  height: 2.2em;
+  width: 2.2em;
+}
+.sbar {
+  height: 2.5em;
+  width: 2.5em;
+  border-left: 1px solid rgb(179, 179, 179);
+  padding: 2%;
+}
+.app {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.7em;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.acc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.acc .install {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgb(179, 179, 179);
+  gap: 0.3em;
+  padding: 0.4em 0.2em 0.4em 2em;
+}
+.acc .install img {
+  height: 1em;
+  width: 1em;
+}
+.login {
+  background-color: white;
+  color: black;
+  border-radius: 2em;
+  padding: 1em;
+  width: 7em;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+#main {
+  display: flex;
+  justify-content: space-between;
+}
+aside {
+  background-color: rgb(18, 18, 18);
+  width: 33vw;
+  height: 75vh;
+  border-radius: 5px;
+  padding: 0.8em;
+  margin: 0.5em;
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  z-index: 1;
+}
+aside .ahead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.2em 0em;
+}
+aside .ahead img {
+  height: 2.5em;
+  width: 2.5em;
+  padding: 20%;
+}
+aside .divcontent {
+  display: flex;
+  flex-direction: column;
+  max-height: 17rem;
+  gap: 1em;
+  overflow-y: overlay;
+  padding: 1em 0px;
+}
+aside .divcontent::-webkit-scrollbar {
+  width: 0.8em;
+  background: transparent;
+}
+aside .divcontent::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+aside .divcontent:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+aside h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5em 0em;
+}
+aside p {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+aside .divcontent div {
+  background-color: rgb(31, 31, 31);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+aside .asidebtn {
+  background-color: white;
+  color: black;
+  padding: 2.5%;
+  width: 38%;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 25px;
+  margin: 1.2em 0em;
+}
+aside div a {
+  font-size: 12px;
+  margin-right: 0.8em;
+  color: rgb(179, 179, 179);
+  padding-bottom: 1em;
+}
+aside .cookies a {
+  color: white;
+}
+aside .terms {
+  margin: 2em 0em;
+}
+.lang img {
+  height: 1.5em;
+  width: 1.5em;
+}
+.lang button {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 30px;
+  padding: 2.5%;
+}
+
+.a-footer {
+  background: linear-gradient(
+    to right,
+    rgb(173, 42, 151),
+    rgb(142, 79, 184),
+    rgb(82, 152, 242)
+  );
+  color: white;
+  position: fixed;
+  bottom: 0;
+  height: 10vh;
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.a-footer .main-btn {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.a-footer .footer-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.signup {
+  background-color: white;
+  color: black;
+  padding: 1em 2em;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.right {
+  background-color: rgb(18, 18, 18);
+  margin-left: 1em;
+  width: 65.2%;
+  height: 90vh;
+  border-radius: 5px;
+  padding: 1em;
+  padding-bottom: 20vh;
+  padding-right: 0px;
+  position: fixed;
+  top: 4.5rem;
+  bottom: 10vh;
+  left: 33vw;
+  overflow: overlay;
+}
+.right::-webkit-scrollbar {
+  width: 0.8em;
+  background: transparent;
+}
+.right::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  transition: background-color 0.7s ease-out;
+}
+.right:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.r-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7em 0em;
+}
+.r-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.show-all {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: rgb(179, 179, 179);
+  padding-right: 2em;
+}
+.area {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 1em;
+  scrollbar-width: none;
+  max-height: 17rem;
+  overflow-y: hidden;
+}
+.card {
+  width: 11rem;
+  height: 16rem;
+  border-radius: 5px;
+  position: relative;
+}
+.card > * {
+  cursor: pointer;
+}
+.card img {
+  height: 10em;
+  width: 10em;
+  border-radius: 7px;
+  object-fit: contain;
+  padding: 0.5em;
+  margin: 0.5em 0px;
+}
+.card-name {
+  font-size: 1rem;
+  font-weight: 400;
+  max-height: 2.7em;
+  line-height: 1.3em;
+  padding: 0px 0.5em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.artist {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(179, 179, 179);
+  overflow: hidden;
+  margin-top: 0.2em;
+  padding: 0px 0.5em;
+}
+
+.area::-webkit-scrollbar {
+  height: 0px;
+  background: transparent;
+}
+
+.area:hover::-webkit-scrollbar {
+  height: 8px;
+  background-color: transparent;
+}
+
+.area:hover::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 4px;
+}
+
+.play img {
+  height: 4em;
+  width: 4em;
+  position: absolute;
+  left: 5.3em;
+  bottom: 5.8em;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: opacity 0.1s ease-in 0.2s, transform 0.1s ease-in 0.2s;
+}
+
+section .p-artists .area .card img {
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.p-artists .card .play img {
+  width: 4em !important;
+  height: 4em !important;
+  left: 5.8em;
+  bottom: 5em;
+}
+
+.r-hr {
+  width: 100%;
+  margin: 5em 0em;
+  border: 1px solid rgb(41, 41, 41);
+}
+.r-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.r-footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.r-footer div a {
+  color: rgb(179, 179, 179);
+}
+.social-media {
+  display: flex;
+  flex-direction: row !important;
+}
+.social-media a {
+  height: 1.5em;
+  width: 1.5em;
+  padding: 1.3em;
+  border-radius: 50%;
+  background-color: rgb(41, 41, 41);
+  position: relative;
+}
+.social-media img {
+  height: 1.2em;
+  width: 1.2em;
+  position: absolute;
+  bottom: 0.65em;
+  right: 0.7em;
+}

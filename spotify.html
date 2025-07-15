@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="./spotify.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./spotify.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <nav>
+      <div class="icon">
+        <button><img src="./logo.svg" class="logo" /></button>
+        <button class="home"><img src="./home.svg" /></button>
+
+        <div class="searchbar">
+          <button><img src="./search.svg" alt="search" /></button>
+          <input type="text" placeholder="What do you want to play?" />
+          <img src="./sbar.svg" class="sbar" />
+        </div>
+      </div>
+      <div class="app">
+        <a>Premium</a>
+        <a>Support</a>
+        <a>Download</a>
+      </div>
+      <div class="acc">
+        <a class="install"><img src="./install.svg" /> Install app</a>
+        <a>Sign up</a>
+        <button class="login">Log in</button>
+      </div>
+    </nav>
+
+    <div id="main">
+      <aside>
+        <div class="ahead">
+          <h3>YourLibrary</h3>
+          <button><img src="./plus.svg" alt="+" /></button>
+        </div>
+        <div class="divcontent">
+          <div>
+            <h3>Create your first playlist</h3>
+            <p>It's easy, we'll help you</p>
+            <button class="asidebtn">Create Playlist</button>
+          </div>
+          <div>
+            <h3>Let's find some podcasts to follow</h3>
+            <p>We'll keep you updated on new episodes</p>
+            <button class="asidebtn">Browse podcasts</button>
+          </div>
+        </div>
+        <div class="terms">
+          <a>Legal</a>
+          <a>Safety & Privacy Center</a>
+          <a>Privacy Policy</a>
+          <a>Cookies</a>
+          <a>AboutAds</a>
+          <a>Accessibility</a>
+          <div class="cookies"><a>Cookies</a></div>
+        </div>
+        <div class="lang">
+          <button><img src="./globe.png" />English</button>
+        </div>
+      </aside>
+
+      <footer class="a-footer">
+        <button class="main-btn">
+          <div class="footer-title">Preview of Spotify</div>
+          <p>
+            Sign up to get unlimited songs and podcasts with occasional ads. No
+            credit card needed.
+          </p>
+        </button>
+        <button class="signup">Sign up free</button>
+      </footer>
+
+      <section class="right">
+        <div class="trending">
+          <div class="r-head">
+            <a><div class="r-title">Trending Songs</div></a>
+            <div class="show-all"><a>Show all</a></div>
+          </div>
+
+          <div class="area">
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e"
+                alt="card"
+              />
+              <div class="card-name">Sapphire</div>
+              <div class="artist">Ed Sheeran</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02114e03dcb192736b33a42cb5"
+                alt="card"
+              />
+              <div class="card-name">
+                Aur Mohabbat Kitni Karoon (From "Metro ... In Dino")
+              </div>
+              <div class="artist">Pritam, Arijit Singh, Sandeep Srivastava</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02d68f0d21c885b641d9c8a170"
+                alt="card"
+              />
+              <div class="card-name">Kasari</div>
+              <div class="artist">Yubesh Thapa</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e024ae1c4c5c45aabe565499163"
+                alt="card"
+              />
+              <div class="card-name">I Wanna Be Yours</div>
+              <div class="artist">Arctic Monkeys</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e026b0a3a08f3593d36c22f8f28"
+                alt="card"
+              />
+              <div class="card-name">Malai Angali Deu</div>
+              <div class="artist">Sabin Rai</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e0211b6c087ac030b4e396e32c0"
+                alt="card"
+              />
+              <div class="card-name">Mystical Magical</div>
+              <div class="artist">Benson Boone</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02373c63a4666fb7193febc167"
+                alt="card"
+              />
+              <div class="card-name">Blue</div>
+              <div class="artist">Yung Kai</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e021344800458a38197bfc721f3"
+                alt="card"
+              />
+              <div class="card-name">Jhol</div>
+              <div class="artist">Maanu, Annural Khalid</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="p-artists">
+          <div class="r-head">
+            <a><div class="r-title">Popular artists</div></a>
+            <div class="show-all"><a>Show all</a></div>
+          </div>
+
+          <div class="area">
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                alt="card"
+              />
+              <div class="card-name">Pritam</div>
+              <div class="artist">Artist</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab676161000051742ecc8863b857c290d7ebb336"
+                alt="card"
+              />
+              <div class="card-name">Sushant KC</div>
+              <div class="artist">Artist</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616100005174d2f7f3adcf458955f9fd4372"
+                alt="card"
+              />
+              <div class="card-name">John Rai</div>
+              <div class="artist">Artist</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616100005174a0f8df9754c653b6fde618a1"
+                alt="card"
+              />
+              <div class="card-name">Purna Rai</div>
+              <div class="artist">Artist</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7"
+                alt="card"
+              />
+              <div class="card-name">Arjit Singh</div>
+              <div class="artist">Artist</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84"
+                alt="card"
+              />
+              <div class="card-name">Atif Aslam</div>
+              <div class="artist">Artist</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab676161000051741423cd9170794788a6b15a0a"
+                alt="card"
+              />
+              <div class="card-name">Yubesh Thapa</div>
+              <div class="artist">Artist</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="	https://i.scdn.co/image/ab67616100005174fb35b58efb008a08151132f5"
+                alt="card"
+              />
+              <div class="card-name">Sajjan Raj Vaidya</div>
+              <div class="artist">Artist</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="p-radio">
+          <div class="r-head">
+            <a><div class="r-title">Popular radio</div></a>
+            <div class="show-all"><a>Show all</a></div>
+          </div>
+
+          <div class="area">
+            <div class="card">
+              <img
+                src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en-GB"
+                alt="card"
+              />
+              <div class="artist">
+                With Sachin-jigar, Atif Aslam, Shaarib Toshi...
+              </div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/59kBqCjoUv2hZEKyeRucT6/en-GB"
+                alt="card"
+              />
+              <div class="artist">With Kali Prasad BAskota, Trishna...</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3Z3yPo3SbczpDs4FpY9ixA/en-GB"
+                alt="card"
+              />
+              <div class="artist">With Nawaj Ansari, YABI The G.O.A.T...</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/7cZKms5sobqqpTswyJfAQB/en-GB"
+                alt="card"
+              />
+              <div class="artist">
+                With Albatross, Sabin Rai & The Pharaoh,...
+              </div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4E8UiuyXZcoWrGJ1QcHog4/en-GB"
+                alt="card"
+              />
+              <div class="artist">
+                With John Rai, Ajjan Raj Vaidya, Bipul...
+              </div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3Z3yPo3SbczpDs4FpY9ixA/en-GB"
+                alt="card"
+              />
+              <div class="artist">With Kali Prasad BAskota, Trishna...</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3Z3yPo3SbczpDs4FpY9ixA/en-GB"
+                alt="card"
+              />
+              <div class="artist">With Kali Prasad BAskota, Trishna...</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3Z3yPo3SbczpDs4FpY9ixA/en-GB"
+                alt="card"
+              />
+              <div class="artist">Maanu, Annural Khalid</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="featured">
+          <div class="r-head">
+            <a><div class="r-title">Featured Charts</div></a>
+            <div class="show-all"><a>Show all</a></div>
+          </div>
+
+          <div class="area">
+            <div class="card">
+              <img
+                src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                alt="card"
+              />
+              <div class="artist">Your weekly update of the most played...</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg"
+                alt="card"
+              />
+              <div class="artist">Your weekly update of the most played...</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+                alt="card"
+              />
+              <div class="artist">Your daily update of the most played...</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg"
+                alt="card"
+              />
+              <div class="artist">Your daily update of the most played...</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg"
+                alt="card"
+              />
+              <div class="artist">Your daily update of the most played...</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e0211b6c087ac030b4e396e32c0"
+                alt="card"
+              />
+              <div class="artist">Your daily update of the most viral...</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02373c63a4666fb7193febc167"
+                alt="card"
+              />
+              <div class="artist">Your daily update of the most viral...</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e021344800458a38197bfc721f3"
+                alt="card"
+              />
+              <div class="artist">Your daily update of the most viral...</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="editors">
+          <div class="r-head">
+            <a><div class="r-title">Playlists from Editors</div></a>
+            <div class="show-all"><a>Show all</a></div>
+          </div>
+
+          <div class="area">
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67706f00000002bf95459f4719cb4f70393377"
+                alt="card"
+              />
+              <div class="artist">Gettin' figgy with it, bana-na-na-nanana</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67706f000000024467e73aa3155eb51ae0ff89"
+                alt="card"
+              />
+              <div class="artist">Soft electronic music for your dinner.</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67706f000000029a1c3afe1b3600276590ff1d"
+                alt="card"
+              />
+              <div class="artist">Cold bear. Hot wings. Great rock.</div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67706f00000002a6a35d85da2b230f63a0005a"
+                alt="card"
+              />
+              <div class="artist">
+                The perfect soundtrack to those long nights...
+              </div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67706f00000002d497c6e15e12d5ff9df6e5f9"
+                alt="card"
+              />
+              <div class="artist">
+                The gentle sound of some of the greatest...
+              </div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e0211b6c087ac030b4e396e32c0"
+                alt="card"
+              />
+              <div class="artist">
+                The gentle sound of some of the greatest...
+              </div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02373c63a4666fb7193febc167"
+                alt="card"
+              />
+              <div class="artist">
+                The gentle sound of some of the greatest...
+              </div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e021344800458a38197bfc721f3"
+                alt="card"
+              />
+              <div class="artist">
+                The gentle sound of some of the greatest...
+              </div>
+              <div class="play"><img src="./play.svg" alt="play" /></div>
+            </div>
+          </div>
+        </div>
+        <hr class="r-hr" />
+        <footer class="r-footer">
+          <div>
+            <h4>Company</h4>
+            <a>About</a>
+            <a>Jobs</a>
+            <a>For the Record</a>
+          </div>
+          <div>
+            <h4>Communities</h4>
+            <a>For Artists</a>
+            <a>Developers</a>
+            <a>Advertising</a>
+            <a>Investors</a>
+            <a>Vendors</a>
+          </div>
+          <div>
+            <h4>Useful links</h4>
+            <a>Support</a>
+            <a>Free Mobile App</a>
+          </div>
+          <div>
+            <h4>Spotify Plans</h4>
+            <a>Premium Individual</a>
+            <a>Premium Duo</a>
+            <a>Premium Family</a>
+            <a>Premium Student</a>
+            <a>Spotify Free</a>
+          </div>
+          <div class="social-media">
+            <a href="https://www.instagram.com/spotify/"
+              ><img src="./insta.svg" alt="insta"
+            /></a>
+            <a href="https://x.com/spotify"
+              ><img src="./twitter.svg" alt="twitter"
+            /></a>
+            <a href="https://www.facebook.com/Spotify"
+              ><img src="./facebook.svg" alt="facebook"
+            /></a>
+          </div>
+        </footer>
+        <hr class="r-hr" />
+        <div>© 2025 Spotify AB</div>
+      </section>
+    </div>
+
+    <script src="./spotify.js"></script>
+  </body>
+</html>
