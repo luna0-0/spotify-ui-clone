@@ -22,21 +22,23 @@ let anchor = document.querySelectorAll("a");
 anchor.forEach((atag) => {
   atag.addEventListener("mouseover", () => {
     atag.style.textDecoration = "underline";
+    atag.style.color = "white";
   });
 });
 anchor.forEach((atag) => {
   atag.addEventListener("mouseout", () => {
     atag.style.textDecoration = "none";
+    atag.style.color = "rgb(179, 179, 179)";
   });
 });
 
-let socialmedia = document.querySelectorAll(".social-media a");
-socialmedia.forEach((sm) => {
-  sm.addEventListener("mouseover", () => {
-    sm.style.backgroundColor = "rgb(115, 115, 115)";
+let icon = document.querySelectorAll(".icon-btns a");
+icon.forEach((ico) => {
+  ico.addEventListener("mouseover", () => {
+    ico.style.backgroundColor = "rgb(115, 115, 115)";
   });
-  sm.addEventListener("mouseout", () => {
-    sm.style.backgroundColor = "rgb(41, 41, 41)";
+  ico.addEventListener("mouseout", () => {
+    ico.style.backgroundColor = "rgb(41, 41, 41)";
   });
 });
 
@@ -47,5 +49,15 @@ navlinks.forEach((link) => {
   });
   link.addEventListener("mouseout", () => {
     link.style.color = "rgb(179, 179, 179)";
+  });
+});
+
+let buttons = document.querySelectorAll(".btn");
+buttons.forEach((button) => {
+  button.addEventListener("mouseover", () => {
+    button.style.transform = "scale(1.07)";
+  });
+  button.addEventListener("mouseout", () => {
+    button.style.transform = "scale(1)";
   });
 });

@@ -18,6 +18,7 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -36,8 +37,8 @@ nav .logo {
   width: 2.5em;
 }
 nav .home {
-  height: 3.4em;
-  width: 3.4em;
+  height: 3.2em;
+  width: 3.5em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,8 +46,8 @@ nav .home {
   border-radius: 100%;
 }
 nav .home img {
-  height: 2em;
-  width: 4em;
+  height: 3em;
+  width: 3.3em;
   padding: 0em 1em;
 }
 nav .icon {
@@ -125,12 +126,13 @@ nav .icon {
   display: flex;
   justify-content: space-between;
 }
+
 aside {
   background-color: rgb(18, 18, 18);
-  width: 33vw;
-  height: 75vh;
+  width: 25vw;
+  height: 78vh;
   border-radius: 5px;
-  padding: 0.8em;
+  padding: 0.5em;
   margin: 0.5em;
   position: fixed;
   top: 4rem;
@@ -183,40 +185,52 @@ aside .divcontent div {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  padding: 2%;
+  padding: 1rem;
 }
 aside .asidebtn {
   background-color: white;
   color: black;
   padding: 2.5%;
-  width: 38%;
+  width: 52%;
   font-size: 0.875rem;
   font-weight: 700;
   border-radius: 25px;
   margin: 1.2em 0em;
 }
 aside div a {
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: 300;
   margin-right: 0.8em;
   color: rgb(179, 179, 179);
   padding-bottom: 1em;
 }
 aside .cookies a {
   color: white;
+  font-size: 12px;
+  font-weight: 400;
 }
-aside .terms {
-  margin: 2em 0em;
+aside .terms div {
+  margin: 2rem 1.5rem 0rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5em;
 }
+
 .lang img {
   height: 1.5em;
   width: 1.5em;
 }
 .lang button {
+  width: 29%;
+  font-size: 12px;
+  font-weight: 400;
   display: flex;
   align-items: center;
   gap: 0.4em;
   border: 1px solid rgb(179, 179, 179);
   border-radius: 30px;
+  margin: 0 1rem;
   padding: 2.5%;
 }
 
@@ -259,8 +273,8 @@ aside .terms {
 .right {
   background-color: rgb(18, 18, 18);
   margin-left: 1em;
-  width: 65.2%;
-  height: 90vh;
+  width: 73vw;
+  height: 78vh;
   border-radius: 5px;
   padding: 1em;
   padding-bottom: 20vh;
@@ -268,7 +282,7 @@ aside .terms {
   position: fixed;
   top: 4.5rem;
   bottom: 10vh;
-  left: 33vw;
+  left: 25vw;
   overflow: overlay;
 }
 .right::-webkit-scrollbar {
@@ -366,7 +380,7 @@ aside .terms {
   bottom: 5.8em;
   opacity: 0;
   transform: translateY(50%);
-  transition: opacity 0.1s ease-in 0.2s, transform 0.1s ease-in 0.2s;
+  transition: opacity 0.1s ease-in 0.2s, transform 0.03s ease-in 0.2s;
 }
 
 section .p-artists .area .card img {
