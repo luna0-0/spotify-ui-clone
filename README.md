@@ -1,32 +1,44 @@
-# Music Streaming UI
+# 🎵 Music Streaming UI
 
-A Spotify-inspired music streaming interface created using **HTML, CSS, and minimal JavaScript**.  
-The goal of this project is to practice frontend layout design and responsive UI development.
+A Spotify-inspired music streaming user interface built using **HTML, CSS, and minimal JavaScript**.  
+This project focuses on practicing frontend layout design, visual hierarchy, and responsive UI structure.
+
+---
 
 ## 🚀 Features
-- Sidebar navigation layout
-- Playlist and album sections
-- Music player UI (design-focused)
-- Responsive design for different screen sizes
-- Hover and active states
+- Sidebar-based navigation layout
+- Playlist and album card sections
+- Music player interface (UI only)
+- Responsive layout for different screen sizes
+- Hover and active interaction states
+
+---
 
 ## 🛠 Tech Stack
-- HTML5
-- CSS3 (Flexbox)
-- JavaScript (basic UI behavior)
+- **HTML5** – Semantic structure
+- **CSS3** – Flexbox layout, spacing, and styling
+- **JavaScript** – Basic UI interactions
+
+---
 
 ## 🎯 What I Learned
-- Designing complex layouts with CSS
-- Aligning elements using Flexbox
-- Creating visually appealing UI components
-- Improving UI consistency and spacing
+- Creating complex layouts using CSS Flexbox
+- Structuring UI components consistently
+- Improving spacing, alignment, and visual balance
+- Designing clean and modern user interfaces
+
+---
 
 ## 📸 Screenshots
-(Add screenshots here)
+_Add screenshots here_
+
+---
 
 ## 🌐 Live Demo
-https://luna0-0.github.io/spotify-ui-clone/
+🔗 https://luna0-0.github.io/spotify-ui-clone/
+
+---
 
 ## ⚠️ Disclaimer
-This project is built for **learning purposes only**.  
-UI inspiration is taken from Spotify and is **not affiliated with Spotify**.
+This project is created **for learning and practice purposes only**.  
+The UI design is inspired by Spotify and is **not affiliated with or endorsed by Spotify**.
