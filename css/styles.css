@@ -28,7 +28,7 @@ nav {
   background-color: black;
   color: rgb(179, 179, 179);
   padding: 1%;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 2;
 }
@@ -122,14 +122,9 @@ nav .icon {
   font-size: 1rem;
 }
 
-#main {
-  display: flex;
-  justify-content: space-between;
-}
-
 aside {
   background-color: rgb(18, 18, 18);
-  width: 25vw;
+  width: 28%;
   height: 78vh;
   border-radius: 5px;
   padding: 0.5em;
@@ -137,7 +132,8 @@ aside {
   position: fixed;
   top: 4rem;
   left: 0;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 aside .ahead {
   display: flex;
@@ -198,7 +194,7 @@ aside .asidebtn {
   margin: 1.2em 0em;
 }
 aside div a {
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-weight: 300;
   margin-right: 0.8em;
   color: rgb(179, 179, 179);
@@ -206,11 +202,11 @@ aside div a {
 }
 aside .cookies a {
   color: white;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
 }
 aside .terms div {
-  margin: 2rem 1.5rem 0rem 1rem;
+  margin: 2rem 2rem 0rem 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -222,8 +218,7 @@ aside .terms div {
   width: 1.5em;
 }
 .lang button {
-  width: 29%;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -231,59 +226,24 @@ aside .terms div {
   border: 1px solid rgb(179, 179, 179);
   border-radius: 30px;
   margin: 0 1rem;
-  padding: 2.5%;
-}
-
-.a-footer {
-  background: linear-gradient(
-    to right,
-    rgb(173, 42, 151),
-    rgb(142, 79, 184),
-    rgb(82, 152, 242)
-  );
-  color: white;
-  position: fixed;
-  bottom: 0;
-  height: 10vh;
-  width: 100%;
-  padding: 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
-}
-.a-footer .main-btn {
-  text-align: left;
-  font-size: 1rem;
-  font-weight: 400;
-}
-.a-footer .footer-title {
-  font-size: 0.875rem;
-  font-weight: 700;
-}
-.signup {
-  background-color: white;
-  color: black;
-  padding: 1em 2em;
-  border-radius: 25px;
-  font-weight: 700;
-  font-size: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .right {
   background-color: rgb(18, 18, 18);
-  margin-left: 1em;
-  width: 73vw;
+  width: 70%;
   height: 78vh;
   border-radius: 5px;
-  padding: 1em;
+  /* padding: 1em; */
   padding-bottom: 20vh;
-  padding-right: 0px;
   position: fixed;
   top: 4.5rem;
   bottom: 10vh;
-  left: 25vw;
+  right: 0.6rem;
   overflow: overlay;
+}
+.right a {
+  padding: 0.7rem 1rem 0rem 1.5rem;
 }
 .right::-webkit-scrollbar {
   width: 0.8em;
@@ -309,9 +269,10 @@ aside .terms div {
   font-size: 0.875rem;
   font-weight: 700;
   color: rgb(179, 179, 179);
-  padding-right: 2em;
+  margin-top: 1rem;
 }
 .area {
+  margin-left: 1rem;
   display: flex;
   flex-direction: row;
   overflow-x: auto;
@@ -403,8 +364,10 @@ section .p-artists .area .card img {
   border: 1px solid rgb(41, 41, 41);
 }
 .r-footer {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
 }
 .r-footer div {
   display: flex;
@@ -432,4 +395,41 @@ section .p-artists .area .card img {
   position: absolute;
   bottom: 0.65em;
   right: 0.7em;
+}
+
+.a-footer {
+  background: linear-gradient(
+    to right,
+    rgb(173, 42, 151),
+    rgb(142, 79, 184),
+    rgb(82, 152, 242)
+  );
+  color: white;
+  position: fixed;
+  bottom: 0;
+  height: 10vh;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  border-radius: 10px;
+}
+.a-footer .main-btn {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.a-footer .footer-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.signup {
+  background-color: white;
+  color: black;
+  padding: 0.7rem 1rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 0.95rem;
 }

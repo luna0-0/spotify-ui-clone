@@ -17,7 +17,7 @@ cards.forEach((card) => {
   });
 });
 
-let anchor = document.querySelectorAll("a");
+let anchor = document.querySelectorAll(".anchor-hover a");
 
 anchor.forEach((atag) => {
   atag.addEventListener("mouseover", () => {
@@ -29,6 +29,18 @@ anchor.forEach((atag) => {
   atag.addEventListener("mouseout", () => {
     atag.style.textDecoration = "none";
     atag.style.color = "rgb(179, 179, 179)";
+  });
+});
+
+let a_right = document.querySelectorAll(".a-hover a");
+a_right.forEach((aright) => {
+  aright.addEventListener("mouseover", () => {
+    aright.style.textDecoration = "underline";
+  });
+});
+a_right.forEach((aright) => {
+  aright.addEventListener("mouseout", () => {
+    aright.style.textDecoration = "none";
   });
 });
 
